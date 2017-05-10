@@ -1,6 +1,6 @@
 package com.epam.java_training.model;
 
-public class Product {
+public class Product {//equals? hashCode?
 	
 	private String code;
 	private String name;

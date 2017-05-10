@@ -14,7 +14,7 @@ import com.epam.java_training.model.Product;
 
 public class DOMReader {
 	
-	private String file_path;
+	private String file_path;// code convention?????
 	
 	private Product       current_product;
 	private List<Product> list_products;
@@ -42,7 +42,7 @@ public class DOMReader {
 			Document document = parser.getDocument();
 			Element root = document.getDocumentElement();
 			
-			NodeList productNodes = root.getElementsByTagName("ProductDetail");
+			NodeList productNodes = root.getElementsByTagName("ProductDetail");// Неименованные константные строки
 			
 			for (int i = 0; i < productNodes.getLength(); i++) {
 				
@@ -67,7 +67,7 @@ public class DOMReader {
 				
 			}
 		} catch (SAXException e) {
-			e.printStackTrace();
+			e.printStackTrace();//почему тут просто гасим исключение?
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
